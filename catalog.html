@@ -11,7 +11,8 @@
 
 <body>
   <header class="header">
-    <a href="index.html"><img src="img/nerds-logo.svg" alt="NERDS, дизайн студия из Краснодара"></a>
+    <a class="header__logo" href="index.html"><img src="img/nerds-logo.svg"
+        alt="NERDS, дизайн студия из Краснодара"></a>
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
@@ -21,14 +22,17 @@
           <a href="" class="header__link">Клиенты</a>
         </li>
         <li class="header__item">
-          <a href="catalog.html" class="header__link">Магазин</a>
+          <a href="catalog.html" class="header__link" aria-current="page">Магазин</a>
         </li>
         <li class="header__item">
           <a href="" class="header__link">Контакты</a>
         </li>
       </ul>
     </nav>
-    <button class="header__btn" type="button">Корзина</button>
+    <a href="" class="header__link">
+      <img src="img/cart-icon.svg" alt="Корзина" class="header__cart">
+      Корзина
+    </a>
   </header>
   <main>
     <h1 class="main__heading">Магазин готовых шаблонов</h1>
