@@ -168,6 +168,8 @@ body {
 }
 
 .slider__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -258,16 +260,52 @@ body {
 
   border: none;
   border-radius: 3px;
-  background-color: #fb565a;
   cursor: pointer;
+}
+
+.offer__btn--red {
+  background-color: #fb565a;
+}
+
+.offer__btn--red:hover {
+  background-color: #e74246;
+}
+
+.offer__btn--red:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
 }
 
 .offer__btn--green {
   background-color: #00ca74;
 }
 
+.offer__btn--green:hover {
+  background-color: #00bc6c;
+}
+
+.offer__btn--green:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
+
 .offer__btn--yellow {
   background-color: #efc84a;
+}
+
+.offer__btn--yellow:hover {
+  background-color: #eab534;
+}
+
+.offer__btn--yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
 }
 
 .about {
@@ -454,7 +492,7 @@ body {
 
 .contact__heading {
   margin-top: 0;
-  
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -495,6 +533,17 @@ body {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.contact__btn:hover {
+  background-color: #e74246;
+}
+
+.contact__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
 }
 
 .footer {
