@@ -223,7 +223,30 @@
       </p>
     </footer>
   </main>
-
+  <section class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__heading">Напишите нам</h2>
+      <button class="modal__btn--close" type="button">
+        <img class="modal__icon" src="img/close-cross.svg" alt="Закрыть окно">
+      </button>
+    </div>
+    <form class="modal__form">
+      <label class="modal__label">
+        Ваше имя:
+        <input class="modal__input" type="text" placeholder="Имя Фамилия">
+      </label>
+      <label class="modal__label">
+        Ваш e-mail:
+        <input class="modal__input" type="email" placeholder="email@example.com">
+      </label>
+      <label class="modal__label">
+        Текст письма:
+        <textarea class="modal__textarea" name="modal__textarea" id="modal__textarea"
+          placeholder="В свободной форме"></textarea>
+      </label>
+      <button class="modal__btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </section>
 </body>
 
 </html>
