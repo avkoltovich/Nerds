@@ -40,11 +40,15 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="filter__form">
-          <fieldset class="filter__fieldset">
+          <fieldset class="filter__fieldset filter__fieldset--price">
             <legend class="filter__legend">СТОИМОСТЬ:</legend>
             <div class="range__box">
-              <button class="filter__range-btn" type="button"></button>
-              <button class="filter__range-btn" type="button"></button>
+              <button class="filter__range-btn" type="button">
+                <img src="img/filter-button.svg" alt="Меньше" class="filter__icon">
+              </button>
+              <button class="filter__range-btn" type="button">
+                <img src="img/filter-button.svg" alt="Больше" class="filter__icon">
+              </button>
             </div>
             <label class="filter__label">
               ОТ
@@ -55,41 +59,49 @@
               <input class="filter__input--number" type="number" placeholder="15 000">
             </label>
           </fieldset>
-          <fieldset class="filter__fieldset">
+          <fieldset class="filter__fieldset filter__fieldset--grid">
             <legend class="filter__legend">Сетка:</legend>
-            <label class="filter__label">
-              <input type="radio" name="grid" id="adept">
+            <label class="filter__item">
+              <input class="filter__radio" type="radio" name="grid" id="adept" checked>
+              <span class="filter__radio-img"></span>
               Адаптивная
             </label>
-            <label class="filter__label">
-              <input type="radio" name="grid" id="fix">
+            <label class="filter__item">
+              <input class="filter__radio" type="radio" name="grid" id="fix">
+              <span class="filter__radio-img"></span>
               Фиксированная
             </label>
-            <label class="filter__label">
-              <input type="radio" name="grid" id="rubber">
+            <label class="filter__item">
+              <input class="filter__radio" type="radio" name="grid" id="rubber">
+              <span class="filter__radio-img"></span>
               Резиновая
             </label>
           </fieldset>
-          <fieldset class="filter__fieldset">
+          <fieldset class="filter__fieldset filter__fieldset--advantages">
             <legend class="filter__legend">ОСОБЕННОСТИ:</legend>
-            <label class="filter__label">
-              <input type="checkbox" name="features" id="slider">
+            <label class="filter__item">
+              <input class="filter__checkbox" type="checkbox" name="features" id="slider" checked>
+              <span class="filter__checkbox-img"></span>
               Слайдер
             </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features" id="advantages">
+            <label class="filter__item">
+              <input class="filter__checkbox" type="checkbox" name="features" id="advantages">
+              <span class="filter__checkbox-img"></span>
               Блок преимуществ
             </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features" id="news">
+            <label class="filter__item">
+              <input class="filter__checkbox" type="checkbox" name="features" id="news" checked>
+              <span class="filter__checkbox-img"></span>
               Новости
             </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features" id="gallery">
+            <label class="filter__item">
+              <input class="filter__checkbox" type="checkbox" name="features" id="gallery">
+              <span class="filter__checkbox-img"></span>
               Галерея
             </label>
-            <label class="filter__label">
-              <input type="checkbox" name="features" id="basket">
+            <label class="filter__item">
+              <input class="filter__checkbox" type="checkbox" name="features" id="basket">
+              <span class="filter__checkbox-img"></span>
               Корзина
             </label>
           </fieldset>
@@ -98,28 +110,29 @@
       </section>
       <div class="sorting-catalog-wrap">
         <section class="sorting">
-          <h2 class="visually-hidden">Сортировка</h2>
           <form class="sorting__form">
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">СОРТИРОВАТЬ:</legend>
-              <label class="filter__label">
-                <input type="radio" name="sorting" id="price">
-                По цене
+            <h2 class="sorting__legend">СОРТИРОВАТЬ:</h2>
+            <fieldset class="sorting__fieldset">
+              <label class="sorting__item sorting__item--type">
+                <input class="sorting__input" type="radio" name="sorting" id="price" checked>
+                <span class="sorting__text">По цене</span>
               </label>
-              <label class="filter__label">
-                <input type="radio" name="sorting" id="type">
-                По типу
+              <label class="sorting__item sorting__item--type">
+                <input class="sorting__input" type="radio" name="sorting" id="type">
+                <span class="sorting__text">По типу</span>
               </label>
-              <label class="filter__label">
-                <input type="radio" name="sorting" id="name">
-                По названию
+              <label class="sorting__item sorting__item--type">
+                <input class="sorting__input" type="radio" name="sorting" id="name">
+                <span class="sorting__text">По названию</span>
               </label>
-              <label class="filter__label">
-                <input type="radio" name="sorting" id="price-up">
+              <label class="sorting__item sorting__item--price">
+                <input class="sorting__input" type="radio" name="sorting-price" id="price-up" checked>
+                <div class="sorting__ico sorting__arrow--up"></div>
                 <span class="visually-hidden">По возрастанию</span>
               </label>
-              <label class="filter__label">
-                <input type="radio" name="sorting" id="price-down">
+              <label class="sorting__item sorting__item--price">
+                <input class="sorting__input" type="radio" name="sorting-price" id="price-down">
+                <div class="sorting__ico sorting__arrow--down"></div>
                 <span class="visually-hidden">По убыванию</span>
               </label>
             </fieldset>
