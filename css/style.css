@@ -1149,7 +1149,7 @@ body {
 
 .modal {
   position: fixed;
-  bottom: 180px;
+  bottom: calc(50% - 295px);
   left: calc(50% - 480px);
 
   display: none;
